@@ -1143,37 +1143,6 @@
         <!-- // main -->
         <!-- Code Copy btn -->
         <script>
-        //  <!--code block top-bar-->
-        $(function () {
-          setTimeout(() => {
-            $(".hljs").parent().each(function () {
-                var prevText = $(this).prev().text();
-                var code = this.dataset.keLanguage;
-                var $labelDiv = $("<div class='codelang'>");
-                var classes = $(this).find('code').attr('class').split(' ');
-                var language = '';
-                for (var i = 0; i < classes.length; i++) {
-                    if (classes[i].startsWith('language-')) {
-                        language = classes[i].substring(9);
-                        if (language == 'undefined') {
-                            language = '';
-                        }
-                        break;
-                    }
-                }
-                var fileName = ''
-                if (language && prevText && (prevText.endsWith("()") || prevText.toUpperCase().endsWith("." + language.toUpperCase()))) {
-                    fileName = prevText;
-                    $(this).prev().remove();
-                }
-                $labelDiv.html('<span class="filename">' + fileName + '</span><span class="language">' + language + '</span>');
-                var $codeLabel = $('<div class="codeLabel">').append('<div class="traffic-light"><img src="https://tistory1.daumcdn.net/tistory/4356152/skin/images/traffic.png"/></div>').append($labelDiv);
-                $(this).before($codeLabel);
-
-            }, 1000)
-          })
-        })
-
         // codeCopyButton.js
           let pre = document.querySelectorAll('pre');
 
@@ -1239,8 +1208,10 @@
               }
               return actionMsg;
           }
+          
         </script>
         <!--<script src="./images/CodeBlockCopy.js"></script>-->
+        <script src="./images/codeBlockHeader.js"></script>
       </div>
       <!-- // container -->
     [##_revenue_list_lower_##]

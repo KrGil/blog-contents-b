@@ -67,9 +67,10 @@ code {
     margin: auto;
 }
 .codelang {
+    float: right;
     margin-right: 15px;
     height: 2em;
-    padding-top: 6px;
+    padding-top: 3px;
 }
 .codelang span {
     font-family: 'D2Coding ligature', 'JetBrainsMonoLight';
@@ -108,18 +109,54 @@ code {
 	font-size: 12px;
 	width: 15px;
  
-	/* your custom style here */
+ /* your custom style here */
 }
+
+.hljs-ln tr:hover{
+    border-radius: 5px;
+    background-color: #1d1d1d;
+}
+.hljs-ln td.hljs-ln-numbers:hover{
+    color: white;
+}
+/* code-header btn */
+.code-header .btn {
+    display: inline-block;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+  
+}
+.code-header {
+    float: left;
+    margin: 8px 0px 0px 10px;
+}
+
+.red {
+  background-color: #F5655B;
+}
+
+.yellow {
+  background-color: #F6BD3B;
+}
+
+.green {
+  background-color: #43C645;
+}
+
+ 
  
 /* your custom style here */
 .hljs-ln {
     margin: 10px;
+    width: 97%;
 }
 .hljs-ln td.hljs-ln-code {
 	padding-left: 10px;
 	line-height: 1.5;
 }
- 
+
 /* for block of code */
 .hljs-ln-code {
 	vertical-align: center;
@@ -3817,6 +3854,7 @@ html {
 	color: #80fff4;
 	font-weight: 700;
     padding: 2px;
+    border-radius: 5px 5px 5px 5px;
 }
 
 @media screen and (max-width: 1060px) {
@@ -3929,7 +3967,7 @@ html {
     font-size: 16px;
     color: rgba(34, 85, 51, 0.87);
     white-space: pre-wrap;
-    margin-top: -1px;
+    margin-top: 0px;
 }
 
 .article-view .cap1 {
