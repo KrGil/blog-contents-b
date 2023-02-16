@@ -41,13 +41,51 @@ p img:hover{
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 
 code {
-    border-radius: 3px;
+    border-radius: 3px 3px 8px 8px;
     font-family: "D2Coding ligature", "Consolas", "Sans Mono", "Courier", monospace !important;
     font-size: 1.0rem !important;
     line-height: 130%;
     margin: 0rem auto;
 }
-
+/*code block header */
+.codeLabel {
+    background: linear-gradient(#2c2c2c, #1b1b1b);
+    border-radius: 10px 10px 0px 0px;
+    height: 2.3em;
+    margin-top: 30px;
+}
+.codeLabel .traffic-light {
+    width: 80px;
+    height: 2em;
+    float: left;
+}
+#tt-body-page .article-view .codeLabel .traffic-light img {
+    margin-top: 10px !important;
+    margin-left: 15px !important;
+    width: 70% !important;
+    background: none;
+    margin: auto;
+}
+.codelang {
+    margin-right: 15px;
+    height: 2em;
+    padding-top: 6px;
+}
+.codelang span {
+    font-family: 'D2Coding ligature', 'JetBrainsMonoLight';
+    font-weight: 600;
+    font-size: 15px;
+    color: snow;
+    margin-top: 4px;
+}
+.codelang span.filename {
+    padding-left: 10px;
+    font-size: 14px;
+}
+.codelang span.language {
+    float: right;
+    color: lightgray;
+}
 
 /* for block of numbers */
 .hljs{
@@ -74,6 +112,9 @@ code {
 }
  
 /* your custom style here */
+.hljs-ln {
+    margin: 10px;
+}
 .hljs-ln td.hljs-ln-code {
 	padding-left: 10px;
 	line-height: 1.5;
@@ -87,7 +128,7 @@ code {
 }
 /* 드래그 배경색상 변경 */
 ::selection{
-	background :rgba(252,	253,	0, .5) ;
+	background :rgba(253, 253, 0, 0.3) ;
 }
 .hljs.yaml td span::selection {
 	font-weight : bold;
@@ -96,7 +137,7 @@ code {
 	
 }
 .hljs.yaml td::selection {
-		background : rgba(252,	253,	255, .1) !important;
+    background : rgba(252,	253,	255, .1) !important;
 }
 
 /* font color 설정 */
@@ -3896,6 +3937,7 @@ html {
     font-size: 16px;
     color: rgba(34, 85, 51, 0.87);
     white-space: pre-wrap;
+    margin-top: -1px;
 }
 
 .article-view .cap1 {
@@ -4153,7 +4195,7 @@ html {
     border: none;
     border-bottom: 2px solid #333;
 		font-size: 1.5em;
-    color: rgba(251, 248, 216, 1);
+    color: white);
 }
 
 .util .search input::placeholder {
