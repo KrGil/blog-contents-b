@@ -2,72 +2,57 @@
 <html lang="ko">
 
 <head>
-	<!--font awsome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-
-  <!--CodeBlock start-->
-	<!--Syntax Highlighter-->
-  <script src="./images/highlight.min.js"></script>
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/lioshi.min.css">
-	<script>hljs.initHighlightingOnLoad();</script>
-	<!--Code Block Line Number-->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
-	<script>
-		hljs.initLineNumbersOnLoad();
-			$(document).ready(function() {
-			$('code.hljs').each(function(i, block) {
-				hljs.lineNumbersBlock(block);
-			});
-		});
-    hljs.configure({languages: []});
-	</script>
-  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
-  <!--codeBlock End-->
-  
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-CY3XSJQZDS"></script>
-	<script data-ad-client="ca-pub-8469494688771463" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	<!-- Typora 인식 -->
-	<link rel="stylesheet" href="./images/github-markdown.css" />
-	<!-- notion2Tstory 인식 -->
-	<link rel="stylesheet" href="https://boltlessengineer.github.io/Notion2Tistory/assets/n2t_style.css" />
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-		gtag('config', 'G-1D892DMCYN');
-	</script>
   <title>[##_page_title_##]</title>
   <meta name="title" content="[##_page_title_##] :: [##_title_##]" />
   <meta name="description" Content="[##_desc_##]" />
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
-  <link rel="alternate" type="application/rss+xml" title="[##_title_##]" href="[##_rss_url_##]" />
+	<link rel="alternate" type="application/rss+xml" title="[##_title_##]" href="[##_rss_url_##]" />
   <link rel="shortcut icon" href="[##_blog_link_##]favicon.ico" />
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700&amp;subset=korean">
   <link rel="stylesheet" href="./style.css" />
+  
+  <script defer src="./images/common.js"></script>
+  <!-- vhCheck -->
   <script src="//t1.daumcdn.net/tistory_admin/lib/jquery/jquery-1.12.4.min.js"></script>
   <script src="//t1.daumcdn.net/tistory_admin/assets/skin/common/vh-check.min.js"></script>
-  <script src="./images/common.js" defer></script>
   <script> (function () { var test = vhCheck();}()); </script>
+  
+  <!--font awsome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  
+  <!--CodeBlock start-->
+  <!-- https://github.com/highlightjs/highlight.js/ -->
+  <script defer src="./images/highlight.min.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/lioshi.min.css">	
+	<!--Code Block Line Number-->
+  <script defer src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script defer src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
+  <!-- clipborad -->
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+  <!--codeBlock End-->
+
+  <!-- https://mburakerman.github.io/prognroll/ -->
+  <script defer src="./images/prognroll.js"></script>
+  <!--https://github.com/michael-lynch/reading-time -->
+	<script defer src="./images/readingtime.js"></script>
+  <!-- Typora 인식 -->
+	<link rel="stylesheet" href="./images/github-markdown.css" />
+	<!-- notion2Tstory 인식 -->
+	<link rel="stylesheet" href="https://boltlessengineer.github.io/Notion2Tistory/assets/n2t_style.css" />
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-CY3XSJQZDS"></script>
 	<script data-ad-client="ca-pub-8469494688771463" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	<!--상단 프로그레스바 스크립트 시작--> 
-	<script type="text/javascript" src="https://rawcdn.githack.com/mburakerman/prognroll/0feda211643153bce2c69de32ea1b39cdc64ffbe/src/prognroll.js"></script> 
-	<script type="text/javascript"> 
-		$(function() { 
-			$("body").prognroll({ height: 5, color: "#fccb4f" }); 			
-			$(".content").prognroll({ custom: true });
-		}); 
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-1D892DMCYN');
 	</script>
-	<!-- ReadingTime -->
-	<script src="./images/readingtime.js"></script>
-	
 </head>
-
-
 <body id="[##_body_id_##]" class="[##_var_headerslogundisplay_##] [##_var_headerbannerdisplay_##] [##_var_listmore_##] [##_var_listmoremobile_##] <s_if_var_headerbannerimage>use-banner-wrp</s_if_var_headerbannerimage> <s_if_var_headersloguntitle>use-slogan-wrp</s_if_var_headersloguntitle> use-menu-[##_var_topnav_##]-wrp">
   <s_t3>
     <!-- 사이드바 서랍형일때 wrap-right / wrap-drawer -->
@@ -1193,7 +1178,6 @@
           copyCode.on('success', function(event) {
               alert('복사완료! 기능 수정 중!');
               event.clearSelection();
-              console.log(event)
               showToast(event.trigger, '코드 복사 완료');
               // showToast("코드 복사 완료!");
           });
@@ -1202,14 +1186,12 @@
               showToast(event.trigger, fallbackMessage(event.action));
           });
 
-
           function clearTooltip(event) {
               event.currentTarget.setAttribute('class', 'copy-btn');
               event.currentTarget.removeAttribute('aria-label');
           }
 
           function showToast(elem, msg) {
-              console.log("in");
               elem.setAttribute('class', 'copy-btn tooltipped tooltipped-s');
               elem.setAttribute('aria-label', msg);
               console.log(elem.getAttribute('class'));
@@ -1230,8 +1212,8 @@
 
 
         </script>
-        <!--<script src="./images/CodeBlockCopy.js"></script>-->
-       <script src="./images/codeBlockHeader.js"></script>
+        <!--<script src="./images/code_block_copy.js"></script>-->
+       
       </div>
       <!-- // container -->
     [##_revenue_list_lower_##]
@@ -1254,13 +1236,14 @@
             <p class="text-info">[##_var_footerCopyright_##]</p>
             <address>[##_var_footerAddress_##]</address>
           </div>
-          <div class="box-site">
+          
+          <!--<div class="box-site">
             <button type="button" data-toggle="xe-dropdown" aria-expanded="false">관련사이트</button>
             <ul>
               <s_link_rep>
                 <li class="on"><a href="[##_link_url_##]" target="_blank">[##_link_site_##]</a></li>
               </s_link_rep>
-            </ul>
+            </ul>-->
           </div>
         </div>
 				<div class="modal">
@@ -1273,10 +1256,36 @@
     <!-- // wrap -->
   </s_t3>
 </body>
+
+<!--<script defer src="./images/code_block_header.js"></script>-->
 <script>
-	<!-- readingTime -->
-	$(function(){
-		// reading-time.js 발동
+  document.addEventListener("DOMContentLoaded", function() {
+    // hljs 
+    hljs.configure({languages: []});
+    hljs.highlightAll();
+    hljs.initLineNumbersOnLoad();
+    
+
+    // hljs number
+    $(document).ready(function() {
+			$('code.hljs').each(function(i, block) {
+				hljs.lineNumbersBlock(block);
+			});
+		});
+    
+    
+    // hljs header 
+    $(".hljs").parent().each(function () {
+        var codeHeaderContents = $("<div class='r-code-header'>");
+        var rawLang = $(this).find('code').attr('class').replace('hljs', '').trim();
+        var language = rawLang.substring(9);
+        language = language == 'undefined' ? '' : rawLang.substring(9);
+        codeHeaderContents.html('<span class="language">' + language + '</span>');
+        var codeHeader = $('<div class="code-header">').append('<div class="l-code-header"><span class="btn red"></span><span class="yellow btn"></span><span class="green btn"></span></div>').append(codeHeaderContents);
+        $(this).before(codeHeader);
+    });
+
+    // reading-time.js
     $('.article-view').readingTime({
         readingTimeAsNumber: false,
         readingTimeTarget: $('.eta'),
@@ -1285,18 +1294,24 @@
         prependTimeString: '💻 읽는시간 : ',
         lang: 'kr'
     });
-		
-		// 이미지 클릭시 해당 이미지 모달
-		 $("p img").click(function(){
-        let img = new Image();
-        img.src = $(this).attr("src")
-        $('.modalBox').html(img);
-        $(".modal").show();
+
+    // 이미지 클릭시 해당 이미지 모달
+    $("p img").click(function(){
+      let img = new Image();
+      img.src = $(this).attr("src")
+      $('.modalBox').html(img);
+      $(".modal").show();
     });
-		// 모달 클릭할때 이미지 닫음
+
+    // 모달 클릭할때 이미지 닫음
     $(".modal").click(function (e) {
-    $(".modal").toggle();
-	})
-});
+      $(".modal").toggle();
+    })
+
+    // Call prognroll function here
+    $("body").prognroll({ height: 5, color: "#80fff4" }); 			
+    $(".content").prognroll({ custom: true });
+  });
+
 </script>
 </html>
