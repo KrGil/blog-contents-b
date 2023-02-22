@@ -916,10 +916,29 @@
                 <!-- 프로필 -->
 								<div class="box-profile <s_if_var_Profilebgimage>box-profile-invert</s_if_var_Profilebgimage>" style="background-image:url('<s_if_var_Profilebgimage>[##_var_Profilebgimage_##]</s_if_var_Profilebgimage>');">
 									<div class="inner-box">
-										<img src="[##_image_##]" class="img-profile" alt="프로필사진">
-										<p class="text-profile">[##_desc_##]</p>
-										<!-- <button type="button" class="button-subscription">구독하기</button> -->
-										<div class="box-sns">
+                    <div class="top-profile">
+                      <img src="[##_image_##]" class="img-profile" alt="프로필사진">
+                      <!-- 텍스트 프로필 -->
+                      <div class="text-profile">
+                        <span>[##_desc_##]</span>
+                        <!-- <button type="button" class="button-subscription">구독하기</button> -->
+                      </div>
+                    </div>
+                    <!-- 정보 프로필 -->
+                    <div class="mid-pofile">
+                      <span class="icon-profile">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/KrGil" target="_blank" class="sns-icon">
+                          https://github.com/KrGil
+                        </a>
+                      </span>
+                      <span class="icon-profile">
+                        <i class="far fa-envelope"></i>
+                        <a href="mailto:kanjjang89@naver.com" class="sns-icon" target="_blank">
+                            kanjjang89@naver.com
+                        </a>
+                      </span>
+                      <div class="box-sns">
                       <!-- 방문자수 -->
                       <div class="box-visit">
                         <h3 class="title-sidebar"><span class="blind">방문자수</span>Total</h3>
@@ -929,10 +948,7 @@
                           <li class="item-visit">Yesterday : [##_count_yesterday_##]</li>
                         </ul>
                       </div>
-                      <a href="https://github.com/KrGil" target="_blank" class="link-icon">
-                        <i class="fab fa-github"></i></a>
-                      <a href="mailto:kanjjang89@naver.com" class="link-icon" target="_blank">
-                        <i class="far fa-envelope"></i></a>        
+                              
 											<s_if_var_Profilefacebooklink>
 												<a href="//[##_var_Profilefacebooklink_##]" class="link-sns link-facebook">
 													<svg xmlns="//www.w3.org/2000/svg" width="8" height="16" viewBox="0 0 8 16" class="svg">
@@ -962,6 +978,9 @@
 												</a>
 											</s_if_var_Profiletwitterlink>
 										</div>
+                    <!-- box sns 종료 -->
+                    </div>
+                     
 									</div>
 								</div>
               </s_sidebar_element>
@@ -1208,6 +1227,8 @@
               }
               return actionMsg;
           }
+
+
         </script>
         <!--<script src="./images/CodeBlockCopy.js"></script>-->
        <script src="./images/codeBlockHeader.js"></script>
@@ -1217,7 +1238,6 @@
 
     <!-- footer -->
       <footer id="footer">
-
         <div class="inner-footer">
           <div class="box-policy">
             <s_if_var_footerLink1Name>
@@ -1234,7 +1254,6 @@
             <p class="text-info">[##_var_footerCopyright_##]</p>
             <address>[##_var_footerAddress_##]</address>
           </div>
-
           <div class="box-site">
             <button type="button" data-toggle="xe-dropdown" aria-expanded="false">관련사이트</button>
             <ul>
@@ -1250,7 +1269,6 @@
 				</div>
       </footer>
       <!-- // footer -->
-
     </div>
     <!-- // wrap -->
   </s_t3>

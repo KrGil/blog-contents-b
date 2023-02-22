@@ -9,9 +9,29 @@ blockquote, blockquote p{
 @import url("//cdn.jsdelivr.net/gh/wan2land/d2coding/d2coding-full.css");
 
 /* icon style*/
-.link-icon{
-      font-size: 2.5em;
-      color: #ccc;
+.sns-icon{
+    font-size: 1em;
+    color: #ccc;
+}
+.icon-profile a:hover{
+    color: #80fff4;
+}
+.icon-profile{
+    padding: 2px 0 2px 0;
+}
+
+/* profile */
+.mid-pofile{
+    margin: 5% auto 5% 10%;
+    display: inline-grid;
+}
+.top-profile{
+    text-align: center;
+}
+
+/* box-visit */
+.box-visit{
+    margin-top: 10%;
 }
 
 /* image modal */
@@ -48,42 +68,31 @@ code {
     margin: 0rem auto;
 }
 /*code block header */
-.codeLabel {
+.code-header {
     background: linear-gradient(#2c2c2c, #1b1b1b);
     border-radius: 10px 10px 0px 0px;
     height: 2.3em;
     margin-top: 30px;
 }
-.codeLabel .traffic-light {
-    width: 80px;
-    height: 2em;
-    float: left;
-}
-#tt-body-page .article-view .codeLabel .traffic-light img {
-    margin-top: 10px !important;
-    margin-left: 15px !important;
-    width: 70% !important;
-    background: none;
-    margin: auto;
-}
-.codelang {
+
+.r-code-header {
     float: right;
     margin-right: 15px;
     height: 2em;
-    padding-top: 3px;
+    padding-top: 4px;
 }
-.codelang span {
+.r-code-header span {
     font-family: 'D2Coding ligature', 'JetBrainsMonoLight';
     font-weight: 600;
     font-size: 15px;
     color: snow;
     margin-top: 4px;
 }
-.codelang span.filename {
+.r-code-header span.filename {
     padding-left: 10px;
     font-size: 14px;
 }
-.codelang span.language {
+.r-code-header span.language {
     float: right;
     color: lightgray;
 }
@@ -120,7 +129,7 @@ code {
     color: white;
 }
 /* code-header btn */
-.code-header .btn {
+.l-code-header .btn {
     display: inline-block;
     border-radius: 50%;
     width: 15px;
@@ -128,7 +137,7 @@ code {
     margin: 0 5px;
   
 }
-.code-header {
+.l-code-header {
     float: left;
     margin: 8px 0px 0px 10px;
 }
@@ -434,7 +443,7 @@ summary {
 
 body {
 	font-size: 15px;
-	font-family: '"D2Coding ligature"', 'Noto Sans KR', Arial, "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", "Nanum Gothic", Dotum, '돋움', Helvetica, sans-serif;
+	font-family: 'D2Coding ligature', 'Noto Sans KR', Arial, "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", "Nanum Gothic", Dotum, '돋움', Helvetica, sans-serif;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -684,7 +693,7 @@ html {
 }
 
 #tt-body-page .main {
-    padding-top: 470px;
+    padding-top: 400px;
 }
 
 #tt-body-page .area-view img{
@@ -1638,7 +1647,7 @@ html {
 
 /* area-main */
 .area-main {
-    width: 80%;
+    width: 75%;
 }
 
 /* ----- media query - mobile ----- */
@@ -1652,13 +1661,17 @@ html {
         padding: 0 20px;
     }
 }
+/* area-common */
+.area-common{
+    width: 90%;
+}
 /* area-view*/
 .area-view{
     width: 95%;
 }
 /* area-aside */
 .area-aside {
-    width: 300px;
+    width: 25%;
     /* box-profile */
     /* box-category */
     /* box-tag */
@@ -1716,22 +1729,21 @@ html {
 .area-aside .box-profile {
     position: relative;
     margin-bottom: 43px;
-    text-align: center;
     border-radius: 3%;
     border-bottom: 1px solid;
 }
 
 .area-aside .box-profile .img-profile {
-    width: 140px;
-    height: 140px;
+    width: 240px;
+    height: 240px;
     margin: 49px 0 14px 0;
     border-radius: 140px;
 }
 
 .area-aside .box-profile .text-profile {
     max-width: 210px;
-    margin: 0 auto 36px auto;
-
+    margin: auto;
+    display: inline-grid;
     line-height: 1.54;
     color: white;
 }
@@ -1749,10 +1761,6 @@ html {
 }
 
 .area-aside .box-profile .box-sns {
-
-    
-    text-align: center;
-		margin-bottom:45px;
 }
 
 .area-aside .box-profile .link-sns {
@@ -1829,9 +1837,8 @@ html {
 }
 
 .area-aside .box-category {
-    margin-bottom: 40px;
-    padding-bottom: 33px;
-    border-bottom: 1px solid #e8e8e8;
+    margin-left: 10%;
+   
 }
 
 .area-aside .box-category .tt_category a {
@@ -1901,6 +1908,9 @@ html {
 .area-aside .sub_category_list {
     margin-top: -4px;
     margin-bottom: 12px;
+}
+.area-aside .box-tag{
+    margin-left: 10%;
 }
 
 .area-aside .box-tag a {
@@ -2097,8 +2107,8 @@ html {
 
 .area-aside .box-calendar .inner-calendar {
     padding: 23px 28px 24px 28px;
-    border: 1px solid #e8e8e8;
-		border-radius : 0 30% 0 0;
+    border-radius: 3%;
+    border-top: 1px solid;
 }
 
 .area-aside .box-calendar .inner-calendar table caption a {
@@ -2132,7 +2142,7 @@ html {
 
 .area-aside .box-visit .item-visit {
 
-    line-height: 1.71;
+    line-height: 1.2;
 
 }
 
@@ -2183,7 +2193,7 @@ html {
 .box-notice .list-sidebar li {
     margin-bottom: 8px;
 }
-
+/* calendar */
 .box-calendar .cal_click {
     font-weight: 700;
     /* color: rgba(251, 158, 107, 1); */
@@ -2193,35 +2203,31 @@ html {
 .area-aside .box-calendar .inner-calendar .cal_month {
     position: relative;
     margin-bottom: -6px;
+    font-size: 1em;
+    font-weight: 900;
 }
 
 .area-aside .box-calendar .inner-calendar .cal_month a {
-    font-weight: 600;
     color: #80fff4;
-    font-size:11px;
 }
 
 .area-aside .box-calendar .inner-calendar .cal_month a:first-child:before {
-    content: '〈';
-    position: absolute;
+    content: '〈'; 
     top: -3px;
     left: 60px;
     width: 30px;
     height: 24px;
     background-color: transparent;
-
     padding-top: 5px;
 }
 
 .area-aside .box-calendar .inner-calendar .cal_month a:last-child:before {
     content: '〉';
-    position: absolute;
     top: -3px;
     right: 60px;
     width: 34px;
     height: 24px;
     background-color: transparent;
-
     padding-top: 5px;
 }
 
@@ -2652,7 +2658,6 @@ html {
 
 .article-type- .summary,
 .article-type-thumbnail .summary {
-    max-width: 620px;
     max-height: 100px;
     margin-bottom: 5px;
     font-size: 1em;
