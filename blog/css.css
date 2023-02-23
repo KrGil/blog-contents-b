@@ -29,6 +29,87 @@ blockquote, blockquote p{
     text-align: center;
 }
 
+/* menu_toolbar https://jojoldu.tistory.com/ */
+.menu_toolbar{
+    top:20% !important;
+    transform: translateY(-50%);
+}
+.menu_toolbar .header_layer{
+    top: 50% !important;
+    right: 40px !important;
+    transform: translateY(-50%);
+}
+.menu_toolbar .header_layer:after{
+    top: 50%;
+    right: -10px !important;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 16px;
+    background-size: 10px 15px;
+    background-image: url(//t1.daumcdn.net/tistory_admin/static/top/pcrtn/layer_edge1_ct.png);
+}
+.menu_toolbar .btn_menu_toolbar{
+    padding: 0 !important;
+    width: 30px;
+    transition: 0.25s ease 0.1s;
+    text-align: right;
+}
+.btn_menu_toolbar.btn_menu_type2 {
+    text-align: center;
+}
+.menu_toolbar .btn_tool_type1{
+    position: relative !important;
+}
+.menu_toolbar .btn_tool + .btn_tool{
+    margin: 10px 0 0 !important;
+}
+.menu_toolbar .btn_tool{
+    display: block !important;
+}
+.menu_toolbar .txt_tool_id {
+    display: none !important;
+}
+.menu_toolbar .txt_state {
+    width: 0;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+    opacity: 0;
+    transition: opacity 0.1s ease 0.2s;
+    text-align: left;
+}
+.menu_toolbar .txt_state + .ico_check_type1 {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 3px 10px 0 0 !important;
+    background-position: -50px -40px;
+    vertical-align: middle;
+}
+
+.menu_toolbar .btn_menu_toolbar:hover {
+    position: relative;
+    width: 89px;
+    text-align: right;
+}
+.menu_toolbar .btn_menu_toolbar:hover .txt_state {
+    position: absolute;
+    top: 6px;
+    left: 13px;
+    width: 50px;
+    font-size: 13px;
+    line-height: 18px;
+    text-indent: 0;
+    opacity: 1;
+}
+.menu_toolbar .btn_menu_toolbar.btn_menu_type2 {
+    text-align: center;
+}
+.menu_toolbar .btn_menu_type2:hover {
+    width: 30px;
+}
+
+
 /* box-visit */
 .box-visit{
     margin-top: 10%;
@@ -918,8 +999,6 @@ html {
     }
 }
 
-
-
 /* header */
 .header {
     position: relative;
@@ -932,7 +1011,10 @@ html {
 .header .inner-header {
     position: relative;
     width: 80%;
-    margin: 0 auto;
+    margin: 15px auto 0;
+}
+.header .inner-header .box-header-l{
+    display: inline-block;
 }
 
 /* .header .box-header:after {

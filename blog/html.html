@@ -65,17 +65,18 @@
         <div class="inner-header <s_if_var_headersloguntitle>slogun-use</s_if_var_headersloguntitle> [##_var_topnav_##]">
 
           <div class="box-header">
-            <h1 class="title-logo">
-              <a href="[##_blog_link_##]" title="[##_title_##]" class="link_logo">
-                <s_if_var_logoImage>
-                  <img src="[##_var_logoImage_##]" class="img_logo" alt="[##_title_##]">
-                </s_if_var_logoImage>
-                <s_not_var_logoImage>
-                  [##_title_##]
-                </s_not_var_logoImage>
-              </a>
-            </h1>
-
+            <div class="box-header-l">
+              <h1 class="title-logo">
+                <a href="[##_blog_link_##]" title="[##_title_##]" class="link_logo">
+                  <s_if_var_logoImage>
+                    <img src="[##_var_logoImage_##]" class="img_logo" alt="[##_title_##]">
+                  </s_if_var_logoImage>
+                  <s_not_var_logoImage>
+                    [##_title_##]
+                  </s_not_var_logoImage>
+                </a>
+              </h1>
+            </div>
             <!-- search-bar for PC -->
 						<div class="util use-top">
 							<div class="search">
@@ -906,7 +907,7 @@
                       <!-- 텍스트 프로필 -->
                       <div class="text-profile">
                         <span>[##_desc_##]</span>
-                        <!-- <button type="button" class="button-subscription">구독하기</button> -->
+                        <!--<button type="button" class="button-subscription">구독하기</button>--> 
                       </div>
                     </div>
                     <!-- 정보 프로필 -->
