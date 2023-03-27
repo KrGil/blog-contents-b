@@ -14,7 +14,7 @@ eclipse에서는 아래와 같이 외부 연결 tool을 설정할 수 있는 `Ex
 
 따라서 아래 이미지와 같이 설정하게 되면 eclipse 내에서 jeus를 켰다 껐다 할 수 있었습니다. 
 
-![image-20230323145637459](C:\Users\admin\Documents\GitHub\blog-contents-b\software\web-development\integrated-development-environment\intellij\jeus.assets\image-20230323145637459.png)
+![image-20230323145637459](https://raw.githubusercontent.com/KrGil/blog-contents-b/8793860127b4cef193a11ab04a87b12970edb49e/software/web-development/integrated-development-environment/intellij/jeus.assets/image-20230323145637459.png)
 
 ## intellij
 
@@ -24,17 +24,17 @@ eclipse에서는 아래와 같이 외부 연결 tool을 설정할 수 있는 `Ex
 
 `Settings > Tools > External Tools` 로 들어가신 후 `+` 로 아래의 이미지와 같이 Program, Working directory를 설정합니다.
 
-![image-20230323150352838](C:\Users\admin\Documents\GitHub\blog-contents-b\software\web-development\integrated-development-environment\intellij\jeus.assets\image-20230323150352838.png)
+![image-20230323150352838](https://raw.githubusercontent.com/KrGil/blog-contents-b/8793860127b4cef193a11ab04a87b12970edb49e/software/web-development/integrated-development-environment/intellij/jeus.assets/image-20230323150352838.png)
 
 ### 실행
 
 실행을 하기위해선 상단의 `Tools > External Tools` 에서 위에서 설정한 것들을 볼 수 있습니다.
 
-![image-20230323151548669](C:\Users\admin\Documents\GitHub\blog-contents-b\software\web-development\integrated-development-environment\intellij\jeus.assets\image-20230323151548669.png)
+![image-20230323151548669](https://raw.githubusercontent.com/KrGil/blog-contents-b/8793860127b4cef193a11ab04a87b12970edb49e/software/web-development/integrated-development-environment/intellij/jeus.assets/image-20230323151548669.png)
 
 클릭 해 보시면 아래와 같이 잘 실행되는것을 확인할 수 있습니다.
 
-![image-20230323151827898](C:\Users\admin\Documents\GitHub\blog-contents-b\software\web-development\integrated-development-environment\intellij\jeus.assets\image-20230323151827898.png)
+![image-20230323151827898](https://raw.githubusercontent.com/KrGil/blog-contents-b/8793860127b4cef193a11ab04a87b12970edb49e/software/web-development/integrated-development-environment/intellij/jeus.assets/image-20230323151827898.png)
 
 
 
