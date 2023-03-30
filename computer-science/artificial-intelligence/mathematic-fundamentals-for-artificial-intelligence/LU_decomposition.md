@@ -51,3 +51,54 @@ U			x		=	y
 
 
 
+### 코드
+
+LU 분해는 가우스 소거법의 `forward elimination(전방소거법)을 행렬로 코드화 한 것입니다.
+
+> L: 행렬 A를 전방소거하는데 쓰인 replacement와 scaling에 대한 EROs를 기록해 둔 행렬(하삼각행렬)
+>
+> U: 행렬 A를 전방소거한 후 남은 upper triangular matrix(상삼각행렬)
+>
+> P: 행렬 A를 전방소거하는데 쓰인 interchange에 대한 EROs를 기록해 둔 행렬 (옵션)
+
+*EROs: [[AI] 가우스 소거법 기본](https://jjam89.tistory.com/275) 아티클에서 살펴보실 수 있습니다.*
+
+파이썬의 numpy, scipy 패키지를 이용해서 구할 수 있습니다.
+
+```python
+A = np.array([[3, 1, 1], [1, -2, -1], [1, 1, 1]])
+b = np.array([4,1,2])
+```
+
+위와 같이 행렬 `A와 b` 가 있을 때 `LU분해`를 구해 봅니다.
+
+```python
+# PLU 분해
+P, L, U = scipy.linalg.lu(A)
+
+```
+
+`scipy`패키지의 `linalg.lu`를 사용하게 되면 위에서 언급한 `L, P, U` 값을 구할 수 있습니다. 하지만 이건 말 그대로 `L, P, U` 값이므로 원하는 x의 값을 구하기 위해선 아래와 같이 `lu_factor()` 를 사용하여야 합니다.
+
+```python
+# LU 분해
+## factorize
+lu, piv = scipy.linalg.lu_factor(A)
+x = scipy.linalg.lu_solve((lu, piv), b)
+```
+
+이렇게 구한 `x`의 값을 아래와 같이 검증할 수 있습니다.
+
+```python
+# 결과 검증
+bb = A @ x
+```
+
+
+
+이렇게 LU분해에 대해 알아보았습니다. 수업을 듣긴 듣는데 여러모로 부족한 부분이 많아서 이렇게 글을 작성하면서 반복을 해야 조금 이해가 가더군요 ㅠ 아직 갈길이 많이 먼 듯 합니다.
+
+오늘도 즐거운 코딩 되시길 바랍니다.
+
+감사합니다.
+
