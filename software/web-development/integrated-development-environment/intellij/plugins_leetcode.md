@@ -12,7 +12,7 @@ jetbrains 사이트에 아래와 같이 소개되어 있습니다. 짧은 소개
 
 https://plugins.jetbrains.com/plugin/12132-leetcode-editor
 
-![image-20230414141714777](C:\Users\admin\Documents\GitHub\blog-contents-b\software\web-development\integrated-development-environment\intellij\plugins_leetcode.assets\image-20230414141714777.png)
+![image-20230414141714777](https://raw.githubusercontent.com/KrGil/blog-contents-b/3dda3c995bb92c6cc475599a6bedebfbe09b7381/software/web-development/integrated-development-environment/intellij/plugins_leetcode.assets/image-20230414141714777.png)
 
 
 
@@ -24,13 +24,13 @@ https://github.com/shuzijun/leetcode-editor
 
 아래는 실제 플러그인 적용 후 사용하는 중인 모습입니다. ㅎㅎ 개인적으로 ui가 직관적이고 깔끔하다고 생각드네요. 
 
-![image-20230414141310517](C:\Users\admin\Documents\GitHub\blog-contents-b\software\web-development\integrated-development-environment\intellij\plugins_leetcode.assets\image-20230414141310517.png)
+![image-20230414141310517](https://raw.githubusercontent.com/KrGil/blog-contents-b/3dda3c995bb92c6cc475599a6bedebfbe09b7381/software/web-development/integrated-development-environment/intellij/plugins_leetcode.assets/image-20230414141310517.png)
 
 ## 설치
 
 `intellij > settings > plugins > LeetCode Editor`를 install 한 후 intellij를 **재시작** 합니다.
 
-![image-20230414142224743](C:\Users\admin\Documents\GitHub\blog-contents-b\software\web-development\integrated-development-environment\intellij\plugins_leetcode.assets\image-20230414142224743.png)
+![image-20230414142224743](https://raw.githubusercontent.com/KrGil/blog-contents-b/3dda3c995bb92c6cc475599a6bedebfbe09b7381/software/web-development/integrated-development-environment/intellij/plugins_leetcode.assets/image-20230414142224743.png)
 
 `intellij > settings > LeetCode Plugin` 설정창에 들어가시게 되면 아래와 같은 설정들을 해주어야 합니다.
 
@@ -44,13 +44,13 @@ https://github.com/shuzijun/leetcode-editor
 
 
 
-![image-20230414142915292](C:\Users\admin\Documents\GitHub\blog-contents-b\software\web-development\integrated-development-environment\intellij\plugins_leetcode.assets\image-20230414142915292.png)
+![image-20230414142915292](https://raw.githubusercontent.com/KrGil/blog-contents-b/3dda3c995bb92c6cc475599a6bedebfbe09b7381/software/web-development/integrated-development-environment/intellij/plugins_leetcode.assets/image-20230414142915292.png)
 
 
 
 그 후 아래와 같이 `Leetcode` 탭 뷰를 확인해 봅니다.
 
-![image-20230414142528269](C:\Users\admin\Documents\GitHub\blog-contents-b\software\web-development\integrated-development-environment\intellij\plugins_leetcode.assets\image-20230414142528269.png)
+![image-20230414142528269](https://raw.githubusercontent.com/KrGil/blog-contents-b/3dda3c995bb92c6cc475599a6bedebfbe09b7381/software/web-development/integrated-development-environment/intellij/plugins_leetcode.assets/image-20230414142528269.png)
 
 
 
@@ -58,7 +58,7 @@ login을 합니다.(login을 하지 않으면 `run` 기능을 사용할 수 없�
 
 저는 자동으로 로그인이 되질 않더라구요. 그래서 아래와 같이 `Sign in` 을 해 주었습니다.
 
-![image-20230414142630270](C:\Users\admin\Documents\GitHub\blog-contents-b\software\web-development\integrated-development-environment\intellij\plugins_leetcode.assets\image-20230414142630270.png)
+![image-20230414142630270](https://raw.githubusercontent.com/KrGil/blog-contents-b/3dda3c995bb92c6cc475599a6bedebfbe09b7381/software/web-development/integrated-development-environment/intellij/plugins_leetcode.assets/image-20230414142630270.png)
 
 클릭하면 intellij에서 browser를 띄울탠데 로그인하면 됩니다.
 
@@ -70,25 +70,25 @@ login을 합니다.(login을 하지 않으면 `run` 기능을 사용할 수 없�
 
 상단의 `Find question` 아이콘을 토글시키면 바로 밑에 `Category, List, Difficult`와 같은 탭들로 정렬시킬 수 있습니다.
 
-![image-20230414144520902](C:\Users\admin\Documents\GitHub\blog-contents-b\software\web-development\integrated-development-environment\intellij\plugins_leetcode.assets\image-20230414144520902.png)
+![image-20230414144520902](https://raw.githubusercontent.com/KrGil/blog-contents-b/3dda3c995bb92c6cc475599a6bedebfbe09b7381/software/web-development/integrated-development-environment/intellij/plugins_leetcode.assets/image-20230414144520902.png)
 
 `[2635]Apply Transform...`을 예제로 선택해 봅니다.
 
 코드 작성 후 아래와 같이 Run Code를 선택하면 하단의 `Leetcode Console`에서 `Output, Expected`로 결과를 띄워줍니다.
 
-![image-20230414145118507](C:\Users\admin\Documents\GitHub\blog-contents-b\software\web-development\integrated-development-environment\intellij\plugins_leetcode.assets\image-20230414145118507.png)
+![image-20230414145118507](https://raw.githubusercontent.com/KrGil/blog-contents-b/3dda3c995bb92c6cc475599a6bedebfbe09b7381/software/web-development/integrated-development-environment/intellij/plugins_leetcode.assets/image-20230414145118507.png)
 
 또한 아래와 같이 `testcase` 아이콘을 클릭하면 원하는 testcase를 한개 혹은 여러개 추가할 수 있습니다. 
 
-![image-20230414150336626](C:\Users\admin\Documents\GitHub\blog-contents-b\software\web-development\integrated-development-environment\intellij\plugins_leetcode.assets\image-20230414150336626.png)
+![image-20230414150336626](https://raw.githubusercontent.com/KrGil/blog-contents-b/3dda3c995bb92c6cc475599a6bedebfbe09b7381/software/web-development/integrated-development-environment/intellij/plugins_leetcode.assets/image-20230414150336626.png)
 
 또한 `Submit` 버튼으로 `submit`과 submit 한 내역들을 불러올 수 있습니다.
 
-![image-20230414150708139](C:\Users\admin\Documents\GitHub\blog-contents-b\software\web-development\integrated-development-environment\intellij\plugins_leetcode.assets\image-20230414150708139.png)
+![image-20230414150708139](https://raw.githubusercontent.com/KrGil/blog-contents-b/3dda3c995bb92c6cc475599a6bedebfbe09b7381/software/web-development/integrated-development-environment/intellij/plugins_leetcode.assets/image-20230414150708139.png)
 
 *submit 할 경우 위와 같이 `runtime`과 `memory usage`, 그리고 퍼센테이지를 함께 출력해 줍니다.* 
 
-![image-20230414150617709](C:\Users\admin\Documents\GitHub\blog-contents-b\software\web-development\integrated-development-environment\intellij\plugins_leetcode.assets\image-20230414150617709.png)
+![image-20230414150617709](https://raw.githubusercontent.com/KrGil/blog-contents-b/3dda3c995bb92c6cc475599a6bedebfbe09b7381/software/web-development/integrated-development-environment/intellij/plugins_leetcode.assets/image-20230414150617709.png)
 
 *화면을 띄우거나, 좌측에 두고 볼 수 있습니다.*
 
