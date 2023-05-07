@@ -13,11 +13,11 @@ slack으로 giscus 댓글 알림을 받기 위해선  아래의 두가지 작업
 
 적용시킬 `repository`에서 Actions를 추가해 줍니다. 아래 이미지처럼 `Actions` 클릭 후 workflow를 만들어 봅니다.
 
-![image-20230427155405462](C:\Users\admin\Documents\GitHub\blog-contents-b\information-technology-tools\ci-cd\discussion.assets\image-20230427155405462.png)
+![image-20230427155405462](https://raw.githubusercontent.com/KrGil/blog-contents-b/8ed94b7886d446339a15e65df10a906c917cd9c6/information-technology-tools/ci-cd/discussion.assets/image-20230427155405462.png)
 
 이후 `.yml` 파일을 설정해야 합니다.  `.yml` 파일이 익숙하지 않으신 분들은 `github-discussions-notifier` (https://github.com/ostk0069/github-discussions-notifier) 에서 알려주는 방법을 사용하면 됩니다.(잘 아시는 분들은 직접... ㅎㅎ). 혹은 내가 손수 짜고 싶으신 분들은 https://github.com/ostk0069/github-discussions-notifier/blob/main/action.yml 여기를 참고하셔도 좋을 듯 합니다.
 
-![image-20230427155905881](C:\Users\admin\Documents\GitHub\blog-contents-b\information-technology-tools\ci-cd\discussion.assets\image-20230427155905881.png)
+![image-20230427155905881](https://raw.githubusercontent.com/KrGil/blog-contents-b/8ed94b7886d446339a15e65df10a906c917cd9c6/information-technology-tools/ci-cd/discussion.assets/image-20230427155905881.png)
 
 > github-discussions-notifier: https://github.com/ostk0069/github-discussions-notifier
 
@@ -48,21 +48,21 @@ jobs:
 
 ##  Secrets and variables 설정하기
 
-![image-20230427150930685](C:\Users\admin\Documents\GitHub\blog-contents-b\information-technology-tools\ci-cd\discussion.assets\image-20230427150930685.png)
+![image-20230427150930685](https://raw.githubusercontent.com/KrGil/blog-contents-b/8ed94b7886d446339a15e65df10a906c917cd9c6/information-technology-tools/ci-cd/discussion.assets/image-20230427150930685.png)
 
 위의 이미지와 같이 `Settings` > `Secrets and variables` > `Actions` 화면에서  `New repository secret`를 클릭하시면 아래 이미지와 같이 Actions secrets를 추가할 수 있습니다. 
 
-![image-20230427170235966](C:\Users\admin\Documents\GitHub\blog-contents-b\information-technology-tools\ci-cd\discussion.assets\image-20230427170235966.png)
+![image-20230427170235966](https://raw.githubusercontent.com/KrGil/blog-contents-b/8ed94b7886d446339a15e65df10a906c917cd9c6/information-technology-tools/ci-cd/discussion.assets/image-20230427170235966.png)
 
 `SLACK_CHANNEL_ID`와 `SLACK_BOT_TOKEN`를 추가하시면 되는데 bot token의 경우 bot을 slack workspace에 설치할 때 알려주고 channel id는 해당 workspace의 채널 명을 작성하면 됩니다.
 
 ### SLACK_BOT_TOKEN
 
-![image-20230427143135148](C:\Users\admin\Documents\GitHub\blog-contents-b\information-technology-tools\ci-cd\discussion.assets\image-20230427143135148.png)
+![image-20230427143135148](https://raw.githubusercontent.com/KrGil/blog-contents-b/8ed94b7886d446339a15e65df10a906c917cd9c6/information-technology-tools/ci-cd/discussion.assets/image-20230427143135148.png)
 
 ### SLACK_CHANNEL_ID
 
-![image-20230427170731599](C:\Users\admin\Documents\GitHub\blog-contents-b\information-technology-tools\ci-cd\discussion.assets\image-20230427170731599.png)
+![image-20230427170731599](https://raw.githubusercontent.com/KrGil/blog-contents-b/8ed94b7886d446339a15e65df10a906c917cd9c6/information-technology-tools/ci-cd/discussion.assets/image-20230427170731599.png)
 
 `blog-comments`가 channel_id가 되겠네요.
 
@@ -102,17 +102,17 @@ jobs:
 
 discussion에서 테스트를 위한 comments를 남겨봅니다.
 
-![image-20230427171148483](C:\Users\admin\Documents\GitHub\blog-contents-b\information-technology-tools\ci-cd\discussion.assets\image-20230427171148483.png)
+![image-20230427171148483](https://raw.githubusercontent.com/KrGil/blog-contents-b/8ed94b7886d446339a15e65df10a906c917cd9c6/information-technology-tools/ci-cd/discussion.assets/image-20230427171148483.png)
 
 `Actions`에서 실제 동작되는지 확인해 봅니다.
 
-![image-20230427150742448](C:\Users\admin\Documents\GitHub\blog-contents-b\information-technology-tools\ci-cd\discussion.assets\image-20230427150742448.png)
+![image-20230427150742448](https://raw.githubusercontent.com/KrGil/blog-contents-b/8ed94b7886d446339a15e65df10a906c917cd9c6/information-technology-tools/ci-cd/discussion.assets/image-20230427150742448.png)
 
 
 
 slack에서 알람이 잘 도착하는 것을 확인할 수 있습니다.
 
-![image-20230427171746689](C:\Users\admin\Documents\GitHub\blog-contents-b\information-technology-tools\ci-cd\discussion.assets\image-20230427171746689.png)
+![image-20230427171746689](https://raw.githubusercontent.com/KrGil/blog-contents-b/8ed94b7886d446339a15e65df10a906c917cd9c6/information-technology-tools/ci-cd/discussion.assets/image-20230427171746689.png)
 
 
 
