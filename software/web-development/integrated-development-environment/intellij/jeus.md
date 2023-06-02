@@ -72,11 +72,15 @@ eclipse에서는 아래와 같이 외부 연결 tool을 설정할 수 있는 `Ex
 
 ### 참고
 
-> 13년 전부터 해당 기능을 요청했었지만 결론은 아직 구현이 되지 않았다 입니다.
+> 13년 전부터 해당 기능을 요청했었지만 결론은 아직 구현이 되지 않았습니다.
+>
+> 조금 더 자세한 진행 상황을 알고 싶으시다면 아래 링크를 참고해 주세요
 
 [YouTrack](https://youtrack.jetbrains.com/issue/IDEA-76371?_ga=2.109406405.1388743571.1684807790-932274892.1675660953&_gl=1*1hynmmj*_ga*OTMyMjc0ODkyLjE2NzU2NjA5NTM.*_ga_9J976DJZ68*MTY4NDgwNzc4OS4xNi4xLjE2ODQ4MDc4NDQuNS4wLjA.)
 
 [jetbrains](https://intellij-support.jetbrains.com/hc/en-us/community/posts/206175769-How-to-execute-an-external-tool-and-insert-output-to-current-file-)
+
+
 
 
 
