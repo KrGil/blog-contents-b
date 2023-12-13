@@ -1,0 +1,79 @@
+# [구글 드라이브] 공유파일 다운로드 링크 만들기
+
+> 오랜만에 글을 작성하네요. 내부망에서만 사용하는 모바일 어플 배포를 어떻게 하면 되는지 알아보다 구글드라이브에서 `.apk`파일을 다운받으면 바로 설치가 되는 것을 확인할 수 있었습니다. 구글 드라이브에서 링크만 주고 바로 다운로드 하는 방법에 대해 알아보도록 하겠습니다.
+
+
+
+## 1. 파일 공유
+
+> 원하는 폴더 우클릭 후 공유 를 클릭해 줍니다.
+
+![image-20231213131115801](C:\Users\admin\Documents\GitHub\blog-contents-b\computer-science\human-computer-interaction\user-experience.assets\image-20231213131115801.png)
+
+> 공유 설정에서 `링크가 있는 모든 사용지`를 선택해 주시고 링크를 복사해 봅니다.
+
+![image-20231213131133469](C:\Users\admin\Documents\GitHub\blog-contents-b\computer-science\human-computer-interaction\user-experience.assets\image-20231213131133469.png)
+
+
+
+## 2. 링크 설정
+
+### 1. 기본 링크
+
+> 공유한 파일의 링크를 복사하면 아래와 같이 확인할 수 있습니다.
+>
+> `https://drive.google.com/file/d/1rdXQN2TRO2lV8N22123JBClLNL5bNH5KL/view?usp=drive_link`
+
+*위의 주소는 유효하지 않는 주소입니다.*
+
+- 해당 주소를 들어가게 되면 아래와 같은 화면이 나와 직접 다운로드를 클릭해 주셔야 합니다.
+
+![image-20231213131229940](C:\Users\admin\Documents\GitHub\blog-contents-b\computer-science\human-computer-interaction\user-experience.assets\image-20231213131229940.png)
+
+
+
+### 2. 1차 수정 링크
+
+저는 링크를 클릭했을 때 바로 다운로드를 받고 싶기에 링크 주소를 살짝 변경해 줍니다.
+
+기본 주소는 아래와 같이 세가지 세션으로 나누어볼 수 있습니다. 
+
+- `https://drive.google.com/file/d/` + `1rdXQN2TRO2lV8N22123JBClLNL5bNH5KL` + `/view?usp=drive_link`
+
+위의 주소에서 `1rdXQN2TRO2lV8N22123JBClLNL5bNH5KL` 부분만 아래에 붙여 새로운 주소로 만들어 봅니다.
+
+- `https://docs.google.com/uc?export=download&id=`
+
+```
+https://docs.google.com/uc?export=download&id=1rdXQN2TRO2lV8N22123JBClLNL5bNH5KL
+```
+
+하지만 가끔 확인되지 않은 파일들의 경우 아래와 같이 경고 문구가 뜨게 됩니다. 
+
+![image-20231213130852993](C:\Users\admin\Documents\GitHub\blog-contents-b\computer-science\human-computer-interaction\user-experience.assets\image-20231213130852993.png)
+
+### 2차 수정 링크
+
+따라서 2차 수정한 링크 끝에 `&confirm=t`를 추가해 주어 바로 무시하고 다운로드 받을 수 있도록 해 줍니다.
+
+```
+https://docs.google.com/uc?export=download&id=1vZFrZFg_4nc3Y5lBdxjjBvKdcVEdkHT1&confirm=t
+```
+
+
+
+## 주의!!
+
+**확인 결과 `&confirm=t`가 적용되지 않네요.**
+
+그래서 폴더 자체를 공유하고 직접 다운로드 하도록 했습니다.
+
+![image-20231213133207748](C:\Users\admin\Documents\GitHub\blog-contents-b\computer-science\human-computer-interaction\user-experience.assets\image-20231213133207748.png)
+
+감사합니다.
+
+
+
+###  References
+
+https://present4n6.tistory.com/126
