@@ -86,6 +86,15 @@ javax.net.ssl.SSLHandshakeException: Read error: ssl=0x74ea629d48: Failure in SS
 
 
 
+그래서 서버에서 허용하는 TLS 통신 버전을 확인해 보니 `TLS1.0`만 허용하는 것을 알 수 있었습니다.
+
+```cmd
+$curl -svo /dev/null https://SERVER_URL 2>&1 | egrep -v "^{.*$|^}.*$|^* http.*$"
+
+```
+
+
+
 ## 원인
 
 확인해보니 android 10부터는 `TLS1.3` 이 기본으로 설정되게 되었더군요. 위에 언급했듯이 정확히 안드로이드 몇 버전에서부터 TLS1.0과 TLS1.1 통신이 강제로 막혔는지는 알 수 없지만 아래와 같이 `TLS1.0`으로 통신하게끔 직접 코드를 작성해도 오류가 발생하더군요.
@@ -130,7 +139,7 @@ ConnectionSpec spec = new ConnectionSpec.Builder(ConnectionSpec.COMPATIBLE_TLS)
 
 - error log
 
-```log
+```
 java.net.UnknownServiceException: Unable to find acceptable protocols. isFallback=false, modes=[ConnectionSpec(cipherSuites=[TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_3DES_EDE_CBC_SHA], tlsVersions=[TLS_1_0], supportsTlsExtensions=true)], supported protocols=[TLSv1.2, TLSv1.3]
 at okhttp3.internal.ConnectionSpecSelector.configureSecureSocket(ConnectionSpecSelector.java:72)
 at okhttp3.internal.io.RealConnection.connectTls(RealConnection.java:232)
