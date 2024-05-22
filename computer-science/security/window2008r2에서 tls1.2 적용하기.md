@@ -18,7 +18,7 @@
 > 2. iis (7.5): 하단의 `curl` 커맨드를 사용하면 출력문 하단에 iis 버전을 확인할 수도 있습니다.
 > 3. .net (4.6): 버전 4에서 안돼서 4.6을 설치했습니다.
 
-![image-20240514105325739](C:\Users\admin\Documents\GitHub\blog-contents-b\computer-science\security\window2008r2에서 tls1.2 적용하기.assets\image-20240514105325739.png)
+![image-20240514105325739](https://raw.githubusercontent.com/KrGil/blog-contents-b/30ff253144af09b09c559db911546e3ae8841587/computer-science/security/window2008r2%EC%97%90%EC%84%9C%20tls1.2%20%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0.assets/image-20240514105325739.png)
 
 다행히 window server 2008 r2는 지원이 되기는 하네요ㅎㅎ 활성화 시켜주면 될 듯 합니다.
 
@@ -26,7 +26,7 @@
 
 - [Windows 업데이트 링크](https://support.microsoft.com/ko-kr/topic/windows%EC%9D%98-winhttp%EC%97%90%EC%84%9C-tls-1-1-%EB%B0%8F-tls-1-2%EB%A5%BC-%EA%B8%B0%EB%B3%B8-%EB%B3%B4%EC%95%88-%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C%EB%A1%9C-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8F%84%EB%A1%9D-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8-c4bd73d2-31d7-761e-0178-11268bb10392)
 
-![image-20240514105510144](C:\Users\admin\Documents\GitHub\blog-contents-b\computer-science\security\window2008r2에서 tls1.2 적용하기.assets\image-20240514105510144.png)
+![image-20240514105510144](https://raw.githubusercontent.com/KrGil/blog-contents-b/30ff253144af09b09c559db911546e3ae8841587/computer-science/security/window2008r2%EC%97%90%EC%84%9C%20tls1.2%20%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0.assets/image-20240514105510144.png)
 
 
 
@@ -45,13 +45,13 @@
 
 #### 1. TLS 1.2 Key(Server, Client)
 
-![image-20240522143146832](C:\Users\admin\Documents\GitHub\blog-contents-b\computer-science\security\window2008r2에서 tls1.2 적용하기.assets\image-20240522143146832.png)
+![image-20240522143146832](https://raw.githubusercontent.com/KrGil/blog-contents-b/30ff253144af09b09c559db911546e3ae8841587/computer-science/security/window2008r2%EC%97%90%EC%84%9C%20tls1.2%20%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0.assets/image-20240522143638180.png)
 
 **Client와 Server로 Key 두개를 생성합니다.**
 
-![image-20240522143546547](C:\Users\admin\Documents\GitHub\blog-contents-b\computer-science\security\window2008r2에서 tls1.2 적용하기.assets\image-20240522143546547.png)
+![image-20240522143546547](https://raw.githubusercontent.com/KrGil/blog-contents-b/30ff253144af09b09c559db911546e3ae8841587/computer-science/security/window2008r2%EC%97%90%EC%84%9C%20tls1.2%20%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0.assets/image-20240522143546547.png)
 
-![image-20240522143638180](C:\Users\admin\Documents\GitHub\blog-contents-b\computer-science\security\window2008r2에서 tls1.2 적용하기.assets\image-20240522143638180.png)
+![image-20240522143638180](https://raw.githubusercontent.com/KrGil/blog-contents-b/30ff253144af09b09c559db911546e3ae8841587/computer-science/security/window2008r2%EC%97%90%EC%84%9C%20tls1.2%20%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0.assets/image-20240522143638180.png)
 
 위와 같이 `Enabled`와 `DisabledByDefault` 두 개의`16진수(H)` `DWORD` 를 생성한 후 Value Data를 각각 1과 0으로 맞춰 줍니다.
 
@@ -71,7 +71,7 @@
 "SchUseStrongCrypto"=dword:00000001
 ```
 
-![image-20240522144639150](C:\Users\admin\Documents\GitHub\blog-contents-b\computer-science\security\window2008r2에서 tls1.2 적용하기.assets\image-20240522144639150.png)
+![image-20240522144639150](https://raw.githubusercontent.com/KrGil/blog-contents-b/30ff253144af09b09c559db911546e3ae8841587/computer-science/security/window2008r2%EC%97%90%EC%84%9C%20tls1.2%20%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0.assets/image-20240522144639150.png)
 
 *서버를 재시작 후 아래 작성한 사이트에서 접속 테스트를 해 보시면 됩니다. 혹은 `git bash`를 사용하신다면 아래 작성한 커맨드로 확인해 보실 수 있습니다.*
 
@@ -85,7 +85,7 @@
 
 설치 후 아래 이미지처럼 체크 후 `Best Practices` 클릭 > `Apply` 를 누르고 서버를 재시작 하면 됩니다!ㅎㅎ
 
-![image-20240522151142027](C:\Users\admin\Documents\GitHub\blog-contents-b\computer-science\security\window2008r2에서 tls1.2 적용하기.assets\image-20240522151142027.png)
+![image-20240522151142027](https://raw.githubusercontent.com/KrGil/blog-contents-b/30ff253144af09b09c559db911546e3ae8841587/computer-science/security/window2008r2%EC%97%90%EC%84%9C%20tls1.2%20%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0.assets/image-20240522151142027.png)
 
 
 
