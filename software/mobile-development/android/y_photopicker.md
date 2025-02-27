@@ -70,7 +70,7 @@ implementation 'com.github.YongRay:Android-Y-PhotoPicker:1.0.1'
 
 오전 내도록 고생했지만 여러가지 알 수 있는 시간이었네요!
 
-역시 개발은 할땐 아주 화나지만 끝나고 나면 행복!
+역시 개발은 할땐 아주 화나지만 끝나고 나면 행복! (git clone도 해놨겠다... 다음에 혹시 호옥시 무슨 일 있으면 직접 .jar나 .arr로 마는걸로...!)
 
 
 
