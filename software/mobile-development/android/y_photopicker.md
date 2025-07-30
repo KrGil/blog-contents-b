@@ -14,11 +14,11 @@
 
 근데 오늘 확인해보니 오류가 발생하는것 아니겠습니까?!(사실 언제 오류가 발생한지 모르겠네요ㅎㅎㅎㅎ;;) 그래서 직접 `mvn repository`를 들어가보니 웬걸? `.arr` 파일을 보관하는 링크가 `404`를 뱉는거 아니겠어요?
 
-![image-20250227135245718](C:\Users\admin\Documents\GitHub\blog-contents-b\software\mobile-development\android\y_photopicker.assets\image-20250227135245718.png)
+![image-20250227135245718](https://raw.githubusercontent.com/KrGil/blog-contents-b/8d88e2137fbdf6de78bc1f30ae06893d1d186f7c/software/mobile-development/android/y_photopicker.assets/image-20250227135245718.png)
 
 *mvn에는 잘 올라가져 있는데...?*
 
-![image-20250227135048781](C:\Users\admin\Documents\GitHub\blog-contents-b\software\mobile-development\android\y_photopicker.assets\image-20250227135048781.png)
+![image-20250227135048781](https://raw.githubusercontent.com/KrGil/blog-contents-b/8d88e2137fbdf6de78bc1f30ae06893d1d186f7c/software/mobile-development/android/y_photopicker.assets/image-20250227135048781.png)
 
 *링크를 클릭하니 404...*
 
@@ -32,7 +32,7 @@
 
 [GitHub - YongRay/Android-Y-PhotoPicker: android MultiImageSelector library](https://github.com/YongRay/Android-Y-PhotoPicker)
 
-![image-20250227135438920](C:\Users\admin\Documents\GitHub\blog-contents-b\software\mobile-development\android\y_photopicker.assets\image-20250227135438920.png)
+![image-20250227135438920](https://raw.githubusercontent.com/KrGil/blog-contents-b/8d88e2137fbdf6de78bc1f30ae06893d1d186f7c/software/mobile-development/android/y_photopicker.assets/image-20250227135438920.png)
 
 *오잉 이것은...?! 설마?*
 
@@ -44,11 +44,11 @@
 
 바로 `JitPack` 사이트에 접속(예전에 한번 해본적 있어 흐릿하게...)해서 해당 git 레포 복붙!
 
-![image-20250227135535102](C:\Users\admin\Documents\GitHub\blog-contents-b\software\mobile-development\android\y_photopicker.assets\image-20250227135535102.png)
+![image-20250227135535102](https://raw.githubusercontent.com/KrGil/blog-contents-b/8d88e2137fbdf6de78bc1f30ae06893d1d186f7c/software/mobile-development/android/y_photopicker.assets/image-20250227135535102.png)
 
 오오...!! 된다...!
 
-![image-20250227135734990](C:\Users\admin\Documents\GitHub\blog-contents-b\software\mobile-development\android\y_photopicker.assets\image-20250227135734990.png)
+![image-20250227135734990](https://raw.githubusercontent.com/KrGil/blog-contents-b/8d88e2137fbdf6de78bc1f30ae06893d1d186f7c/software/mobile-development/android/y_photopicker.assets/image-20250227135734990.png)
 
 따잇...!!! 그렇다... 저 부분이 바뀌었다는것...!
 
